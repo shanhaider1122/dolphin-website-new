@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dolphin Way Heavy Equipment Rental | Abu Dhabi</title>
+  <meta name="description" content="Heavy equipment rental in Mussafah, Abu Dhabi. Electric generators, bending machines, road cutters, scaffolding & more. Contact on WhatsApp.">
+  <style>
+    body {font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin:0; line-height:1.6; background:#f9f9f9;}
+    .container {max-width:1100px; margin:0 auto; padding:24px;}
+    header, footer {background:#f7f7f7;}
+    .hero {padding:48px 24px; text-align:center; background:#fff; margin-bottom:24px;}
+    .btn {display:inline-block; padding:12px 18px; border-radius:10px; text-decoration:none; border:1px solid #ddd; background:#4CAF50; color:#fff;}
+    .grid {display:grid; gap:16px;}
+    @media (min-width: 800px){ .grid-3 {grid-template-columns: repeat(3, 1fr);} }
+    .card {border:1px solid #eee; border-radius:16px; padding:20px; background:#fff;}
+    .muted {color:#666;}
+    nav a {margin-left:12px; text-decoration:none; color:#333; font-weight:500;}
+    nav a.btn {margin-left:0;}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container" style="display:flex; align-items:center; gap:16px; justify-content:space-between">
+    <div style="font-weight:700; font-size:20px;">Dolphin Way Heavy Equipment Rental</div>
+    <nav style="display:flex; gap:12px">
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="https://wa.me/971521739153" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Fast, Reliable Heavy Equipment Rental in Mussafah, Abu Dhabi</h1>
+    <p class="muted">Electric generators, bending machines, road cutters, scaffolding, and smart tools delivered when you need them. Transparent pricing & 7-day support.</p>
+    <p><a class="btn" href="tel:+971521739153">Call +971 52 173 9153</a></p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="grid grid-3">
+      <div class="card"><h3>Electric Generators</h3><p>Range from 8 KVA to 250 KVA, 3-phase.</p></div>
+      <div class="card"><h3>Bending Machines</h3></div>
+      <div class="card"><h3>Heavy Road Cutters</h3></div>
+      <div class="card"><h3>Air Compressors</h3></div>
+      <div class="card"><h3>Power Floor Machines</h3></div>
+      <div class="card"><h3>Single Phase Grinding Machine</h3></div>
+      <div class="card"><h3>3-Phase Grinding Machine</h3></div>
+      <div class="card"><h3>3-Phase Block Cutter</h3></div>
+      <div class="card"><h3>Aluminium Scaffolding</h3></div>
+      <div class="card"><h3>Jack Hammers (All Sizes)</h3></div>
+      <div class="card"><h3>Thread Machine</h3></div>
+      <div class="card"><h3>Wench Machine 3-Phase</h3></div>
+      <div class="card"><h3>All Home Maintenance Smart Tools</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Phone: <a href="tel:+971521739153">+971 52 173 9153</a></p>
+    <p>WhatsApp: <a href="https://wa.me/971521739153" target="_blank" rel="noopener">Chat Now</a></p>
+    <p>Email: <a href="mailto:dolphinerental@gmail.com">dolphinerental@gmail.com</a></p>
+    <p>Address: Mussafah M10, Abu Dhabi</p>
+    <div style="border-radius:16px; overflow:hidden; margin-top:16px;">
+      <iframe src="https://www.google.com/maps?q=Mussafah%20M10%2C%20Abu%20Dhabi&output=embed"
+        width="100%" height="320" style="border:0" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container" style="text-align:center; padding:16px;">
+    © <span id="y"></span> Dolphin Way Heavy Equipment Rental — All rights reserved.
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+
+</body>
+</html>
