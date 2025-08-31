@@ -1,0 +1,106 @@
+/* ====== Theme ====== */
+:root{
+  --bg:#0b1220;
+  --card:#121a2b;
+  --muted:#a9b3c8;
+  --primary:#00d1ff;
+  --primary-600:#00b2da;
+  --text:#eaf1ff;
+  --accent: #6df1a2;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background: radial-gradient(1200px 800px at 80% -10%, rgba(0,209,255,0.15), transparent 60%), var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* Header */
+.site-header{position:sticky;top:0;background:rgba(11,18,32,0.8);backdrop-filter: blur(10px);border-bottom:1px solid rgba(255,255,255,0.06);z-index:20}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{font-weight:800;font-size:1.2rem;color:var(--text)}
+.logo span{color:var(--primary)}
+.nav a{margin-left:18px;color:var(--text);opacity:.85}
+.nav a:hover{opacity:1}
+
+/* Hero */
+.hero{padding:64px 0;background:linear-gradient(180deg, rgba(109,241,162,0.08), transparent)}
+.hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+.hero-text h1{font-size:2.2rem;line-height:1.2;margin:0 0 10px}
+.hero-text p{color:var(--muted);margin:0 0 18px}
+.hero-actions .btn{margin-right:10px}
+.hero-art{height:260px;border-radius:24px;background:
+  radial-gradient(180px 120px at 70% 30%, rgba(0,209,255,.25), transparent 60%),
+  radial-gradient(240px 160px at 40% 70%, rgba(109,241,162,.28), transparent 60%),
+  linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.01));
+  border:1px solid rgba(255,255,255,.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+/* Sections */
+.section{padding:56px 0}
+.section-title{font-size:1.6rem;margin:0 0 18px}
+.page-title{font-size:1.7rem;margin:0 0 12px}
+.prose p, .prose li{color:var(--muted)}
+
+/* Cards Grid */
+.grid.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{
+  background:var(--card);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:18px;
+  overflow:hidden;
+  transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.12);box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.card img{width:100%;height:160px;object-fit:cover;background:#0c1526}
+.card-body{padding:12px 14px}
+.card-body h3{margin:0 0 6px;font-size:1rem}
+.card-body p{margin:0;color:var(--muted);font-size:.92rem}
+
+/* Services list */
+.services-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.services-list li{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:14px}
+.services-list li p{margin:6px 0 0;color:var(--muted)}
+
+/* Equipment detail */
+.equipment{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.equip-media img{width:100%;height:300px;object-fit:cover;border-radius:16px;border:1px solid rgba(255,255,255,.06);background:#0c1526}
+.equip-content .lead{color:var(--muted)}
+
+/* Contact */
+.contact .contact-form{display:grid;grid-template-columns:1fr;gap:10px;margin-top:10px}
+.contact input,.contact textarea{
+  background:var(--card);color:var(--text);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:12px;padding:10px
+}
+.contact button{justify-self:start}
+
+/* Buttons */
+.btn{display:inline-block;padding:10px 14px;border-radius:12px;font-weight:600;border:1px solid transparent}
+.btn-primary{background:var(--primary);color:#001018;border-color:var(--primary-600)}
+.btn-secondary{background:var(--accent);color:#012015;border-color:rgba(109,241,162,.7)}
+.btn-outline{background:transparent;color:var(--text);border-color:rgba(255,255,255,.2)}
+.btn:hover{filter:brightness(1.05)}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(255,255,255,.06);padding:18px 0;background:rgba(11,18,32,.6)}
+.footer-inner{display:flex;gap:10px;justify-content:space-between;align-items:center;color:var(--muted);font-size:.95rem}
+
+/* Utilities */
+.center{text-align:center}
+.mt-24{margin-top:24px}
+
+/* Responsive */
+@media (max-width: 960px){
+  .grid.cards{grid-template-columns:repeat(2,1fr)}
+  .services-list{grid-template-columns:1fr}
+  .equipment{grid-template-columns:1fr}
+  .hero-inner{grid-template-columns:1fr}
+}
